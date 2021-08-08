@@ -26,7 +26,7 @@ let h1 = document.createElement('h1');
         function valuetext(e) {
            e.preventDefault();
             var name1 = document.getElementById("name").value;
-            fetch(`https://www.metaweather.com/api/location/${name1}`)
+            fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${name1}`)
            .then (function(resp) {
                return resp.json();
            })
